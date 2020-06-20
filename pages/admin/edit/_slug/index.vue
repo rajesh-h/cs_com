@@ -46,7 +46,7 @@ export default {
         } else {
           this.recipeObject = querySnapshot.data()
           // eslint-disable-next-line no-console
-          // console.log(this.recipeObject)
+          console.log(this.recipeObject)
         }
       })
     }

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div v-if="picture == ''">
+    <div v-if="picture == '' || picture == undefined">
       <input type="file" accept="image/*" @change="previewImage" />
     </div>
-    <div v-if="picture == ''">
+    <div v-if="picture == '' || picture == undefined">
       <p>
         <progress id="progress" :value="uploadValue" max="100"></progress>
       </p>

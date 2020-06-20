@@ -1,3 +1,6 @@
+import webpack from 'webpack'
+import { version } from './package.json'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -56,6 +59,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
+    '~/modules/generateContent',
   ],
   /*
    ** Nuxt.js modules
@@ -94,11 +98,19 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    // Check build option to improve build speed https://nuxtjs.org/api/configuration-build/
+    // analyze: true,
+    // parallel: true,
+    // cache: true,
+    // hardSource: true,
+  },
   target: 'static',
   ssr: true,
-  manifest: {
-    name: 'CookingShooking',
-    lang: 'en',
+  pwa: {
+    manifest: {
+      name: 'CookingShooking',
+      lang: 'en',
+    },
   },
 }
