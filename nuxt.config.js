@@ -1,5 +1,5 @@
-import webpack from 'webpack'
-import { version } from './package.json'
+// import webpack from 'webpack'
+// import { version } from './package.json'
 
 export default {
   /*
@@ -72,12 +72,22 @@ export default {
       '@nuxtjs/firebase',
       {
         config: {
-          apiKey: 'AIzaSyCjLE7YttfE5aE6eKSQpJPhhadf_PsGi2E',
-          authDomain: 'cscom-2019.firebaseapp.com',
-          databaseURL: 'https://cscom-2019.firebaseio.com',
-          projectId: 'cscom-2019',
-          storageBucket: 'cscom-2019.appspot.com',
-          messagingSenderId: '13136201488',
+          production: {
+            apiKey: 'AIzaSyCjLE7YttfE5aE6eKSQpJPhhadf_PsGi2E',
+            authDomain: 'cscom-2019.firebaseapp.com',
+            databaseURL: 'https://cscom-2019.firebaseio.com',
+            projectId: 'cscom-2019',
+            storageBucket: 'cscom-2019.appspot.com',
+            messagingSenderId: '13136201488',
+          },
+          development: {
+            apiKey: 'AIzaSyCjLE7YttfE5aE6eKSQpJPhhadf_PsGi2E',
+            authDomain: 'cscom-2019.firebaseapp.com',
+            databaseURL: 'https://cscom-2019.firebaseio.com',
+            projectId: 'cscom-2019',
+            storageBucket: 'cscom-2019.appspot.com',
+            messagingSenderId: '13136201488',
+          },
         },
         services: {
           auth: true, // Just as example. Can be any other service.
@@ -112,5 +122,8 @@ export default {
       name: 'CookingShooking',
       lang: 'en',
     },
+  },
+  generate: {
+    fallback: '404.html',
   },
 }

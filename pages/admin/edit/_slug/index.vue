@@ -46,7 +46,7 @@ export default {
         } else {
           this.recipeObject = querySnapshot.data()
           // eslint-disable-next-line no-console
-          console.log(this.recipeObject)
+          // console.log(this.recipeObject)
         }
       })
     }
@@ -73,7 +73,11 @@ export default {
   methods: {},
   head() {
     return {
-      title: 'Add New',
+      title: 'Add / Edit',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'AddEdit', name: 'AddEdit', content: 'Add / Edit' },
+      ],
     }
   },
 }

@@ -246,53 +246,55 @@ export default {
       transition: 0.5s;
       margin-top: 40px;
       letter-spacing: 4px;
+      cursor: pointer;
     }
-  }
-  a {
-    &:hover {
-      background: #000000;
-      color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 5px #000000, 0 0 25px #000000, 0 0 50px #000000,
-        0 0 100px #000000;
-    }
-    span {
-      position: absolute;
-      display: block;
-      &:nth-child(1) {
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #000000);
-        animation: btn-anim1 1s linear infinite;
+
+    a {
+      &:hover {
+        background: #000000;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #000000, 0 0 25px #000000, 0 0 50px #000000,
+          0 0 100px #000000;
       }
-      &:nth-child(2) {
-        top: -100%;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, #000000);
-        animation: btn-anim2 1s linear infinite;
-        animation-delay: 0.25s;
-      }
-      &:nth-child(3) {
-        bottom: 0;
-        right: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(270deg, transparent, #000000);
-        animation: btn-anim3 1s linear infinite;
-        animation-delay: 0.5s;
-      }
-      &:nth-child(4) {
-        bottom: -100%;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(360deg, transparent, #000000);
-        animation: btn-anim4 1s linear infinite;
-        animation-delay: 0.75s;
+      span {
+        position: absolute;
+        display: block;
+        &:nth-child(1) {
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #000000);
+          animation: btn-anim1 1s linear infinite;
+        }
+        &:nth-child(2) {
+          top: -100%;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(180deg, transparent, #000000);
+          animation: btn-anim2 1s linear infinite;
+          animation-delay: 0.25s;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+          right: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(270deg, transparent, #000000);
+          animation: btn-anim3 1s linear infinite;
+          animation-delay: 0.5s;
+        }
+        &:nth-child(4) {
+          bottom: -100%;
+          left: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(360deg, transparent, #000000);
+          animation: btn-anim4 1s linear infinite;
+          animation-delay: 0.75s;
+        }
       }
     }
   }
