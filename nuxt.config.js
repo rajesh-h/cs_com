@@ -115,7 +115,7 @@ export default {
     // cache: true,
     // hardSource: true,
   },
-  target: 'static',
+  // target: 'static',
   ssr: true,
   pwa: {
     manifest: {
