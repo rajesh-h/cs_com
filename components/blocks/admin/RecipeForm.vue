@@ -15,7 +15,7 @@
           </div>
           <div class="field-box">
             <input
-              v-model="createSlug"
+              v-model="recipeObject.slug"
               type="text"
               name=""
               required=""
@@ -306,9 +306,9 @@ export default {
   },
   methods: {
     showPreview(e) {
-      if (!this.editSlug) {
-        this.recipeObject.slug = this.createSlug
-      }
+      // if (!this.editSlug) {
+      //   this.recipeObject.slug = this.createSlug
+      // }
       if (!this.recipeObject.created) {
         this.recipeObject.created = Date.now()
       }
@@ -411,9 +411,9 @@ export default {
     onSubmit(e) {
       // eslint-disable-next-line no-console
 
-      if (!this.editSlug) {
-        this.recipeObject.slug = this.createSlug
-      }
+      // if (!this.editSlug) {
+      //   this.recipeObject.slug = this.createSlug
+      // }
       if (!this.recipeObject.created) {
         this.recipeObject.created = Date.now()
       }
