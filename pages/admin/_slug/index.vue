@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ArticleBlock from '@/components/blocks/ArticleBlock'
+import ArticleBlock from '@/components/blocks/admin/ArticleBlock'
 // import CommentsBlock from '@/components/blocks/CommentsBlock'
 import AsideBlock from '@/components/blocks/AsideBlock'
 import AdminHeader from '@/components/blocks/admin/Header'
