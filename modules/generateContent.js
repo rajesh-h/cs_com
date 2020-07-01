@@ -29,7 +29,7 @@ module.exports = function fetchData() {
     const fetcher = []
 
     // Fetch list from API
-    const dateOffset = 24 * 60 * 60 * 1000 * 2 // 5 days
+    const dateOffset = 24 * 60 * 60 * 1000 * 5 // 5 days
     const goBackTill = Date.now() - dateOffset
     const basePath = `content`
     const allRecipes = []
@@ -47,7 +47,7 @@ module.exports = function fetchData() {
         }
         querySnapshot.forEach((doc) => {
           allRecipes.push({
-            ...doc.data()
+            ...doc.data(),
           })
         })
       })
