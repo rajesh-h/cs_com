@@ -3,7 +3,7 @@
 name: CI
 on:
   schedule:
-  - cron: "* * * * *"
+  - cron: "0 0 * * *"
 jobs:
   build:
     name: Test
