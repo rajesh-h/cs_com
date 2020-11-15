@@ -57,18 +57,18 @@ export default {
     InlineErrorBlock,
   },
   async fetch() {
-    const recipesFeatured = await this.$content()
-      .where({
-        featuredRecipe: true,
-      })
-      .only(['slug', 'title'])
-      .sortBy('updated', 'desc')
-      .limit(5)
-      .fetch()
-    this.widgetDataFR = {
-      header: 'Featured Recipes',
-      details: recipesFeatured,
-    }
+    // const recipesFeatured = await this.$content()
+    //   .where({
+    //     featuredRecipe: true,
+    //   })
+    //   .only(['slug', 'title'])
+    //   .sortBy('updated', 'desc')
+    //   .limit(5)
+    //   .fetch()
+    // this.widgetDataFR = {
+    //   header: 'Featured Recipes',
+    //   details: recipesFeatured,
+    // }
     const recipesLatest = await this.$content()
       .only(['slug', 'title'])
       .sortBy('updated', 'desc')

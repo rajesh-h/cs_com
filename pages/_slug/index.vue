@@ -7,6 +7,9 @@
       </div>
     </div>
     <!-- <comments-block class="comments-block" /> -->
+    <div class="comments">
+      <Disqus />
+    </div>
   </div>
 </template>
 
